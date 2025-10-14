@@ -1,0 +1,29 @@
+/* src/components/MovieCard/MovieCard.css */
+
+.card {
+  /* Thêm hiệu ứng chuyển động mượt mà */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  /* Giúp các card trên cùng một hàng có chiều cao bằng nhau */
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Thêm hiệu ứng khi người dùng di chuột vào card */
+.card:hover {
+  transform: translateY(-5px); /* Nhấc card lên một chút */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Thêm bóng đổ để nổi bật */
+}
+
+.card-body {
+  /* Đảm bảo phần thân card sẽ giãn ra để đẩy các nút xuống dưới cùng */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  /* Phần mô tả phim sẽ giãn ra để chiếm không gian trống */
+  flex-grow: 1;
+}

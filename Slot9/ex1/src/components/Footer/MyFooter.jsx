@@ -1,17 +1,14 @@
-import Button from "react-bootstrap/Button";
+import  Button from "react-bootstrap/Button";
 import "./Footer.css";
 
-function MyFooter({ author, email, githubLink }) {
+function MyFooter({author, email, linkGithub}) {
   return (
     <footer>
       <p>Author: {author}</p>
-      <p>Created by: {email}</p>
-      <p>&copy; {new Date().getFullYear()} {author}. All rights reserved</p>
-      <Button variant="link" href={githubLink}>
-        My Link Github's project: Movies Management
-      </Button>
+      <p>Created by: {email} </p>
+      <p>&copy; {new Date().getFullYear()} TraLTB. All rights reserved </p>
+      <Button variant="link" href="https://github.com/minhthong-git/Fer202.git" >My Link Github: {linkGithub}</Button>
     </footer>
-  );
+  )
 }
-
 export default MyFooter;

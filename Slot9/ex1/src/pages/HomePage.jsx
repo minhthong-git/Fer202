@@ -3,6 +3,7 @@ import HomeCarousel from "../components/Carousel/HomeCarousel";
 import { Row, Col } from "react-bootstrap";
 import { movies } from "../data/movies";
 import MovieCard from "../components/MovieCard/MovieCard";
+import Filter from "../components/Filter/Filter";
 
 export default function HomePage() {
   return (
